@@ -19,11 +19,11 @@ python main.py -t <in Seconds> -i <in Seconds>
 
 ## Output
 ### CPU Usage
-![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/cpu.png)
+![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/swap.png)
 
 ### Memory Usage
-![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/memory.png)
+![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/cpu.png)
 
 ### Swap Usage
-![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/swap.png)
+![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/memory.png)
 
