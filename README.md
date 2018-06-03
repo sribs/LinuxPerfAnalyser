@@ -8,6 +8,11 @@ Simple benchmarking tool to get the CPU Usage( User, System, Idle, IOWait, Nice 
 No additional Installation Required
 
 ## Usage
+### Download the Git Repository
 ```bash
-python cpu.py --time <in Seconds> --interval <in Seconds>
+git clone https://github.com/sribs/CPUBenchmarking.git
+```
+### Run the script
+```bash
+python cpu.py -t <in Seconds> -i <in Seconds>
 ```
