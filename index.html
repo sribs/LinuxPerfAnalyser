@@ -7,15 +7,20 @@
   
   <body>
     
-    <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+    <div id="cpuDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+    <div id="memoryDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+    <div id="swapDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
     <script src="cpu.js"></script>
+    <script src="memory.js"></script>
     <script>
        /* var data = {
             x:[1,2,3,4],
             y:[3,4,5,6],
             type:"scatter"
         };*/
-        Plotly.newPlot('myDiv',data,layout)
+        Plotly.newPlot('cpuDiv',data,layout);
+        Plotly.newPlot('memoryDiv',memData,memlayout);
+        Plotly.newPlot('swapDiv',swapData,swaplayout);
     </script>
   </body>
   

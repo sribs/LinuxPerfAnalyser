@@ -6,7 +6,7 @@ import sys
 import argparse
 import math
 
-def main(t=10,i=1,**kwargs):
+def cpuUsage(t=10,i=1,**kwargs):
     jiffy = os.sysconf(os.sysconf_names['SC_CLK_TCK'])
     num_cpu = multiprocessing.cpu_count()
     date=[]
@@ -57,23 +57,16 @@ def main(t=10,i=1,**kwargs):
     'x':{2},'y':{3},'type':'scatter','name':'System%'}};
     var idlecpu={{
     'x':{4},'y':{5},'type':'scatter','name':'Idle%'}};
-    var nice={{'x':{0},'y':{1},'type':'scatter','name':'Nice%'}};
+    var nice={{'x':{0},'y':{6},'type':'scatter','name':'Nice%'}};
     var iowait={{
-    'x':{2},'y':{3},'type':'scatter','name':'iowait%'}};
+    'x':{2},'y':{7},'type':'scatter','name':'iowait%'}};
     var irq={{
-    'x':{4},'y':{5},'type':'scatter','name':'Interrupts/s%'}};
+    'x':{4},'y':{8},'type':'scatter','name':'Interrupts/s%'}};
     var data=[usercpu,syscpu,idlecpu,nice,iowait,irq]; var layout = {{
     title:'CPU Usage Line Graph'
-    }};""".format(date,userl,date,systeml,date,idlel))
+    }};""".format(date,userl,date,systeml,date,idlel,nicel,iowaitl,irql))
 
     #jsfile.write("""var usercpu=\{{ x:{{0}},\y:{{1}},type:'scatter',name:'User%'\}}; var syscpu=\{{ x:{{0}},y:{{2}},type:'scatter',name:'System%'\}}; var idlecpu=\{{ x:{{0}},y:{{3}},type:'scatter',name:'Idle%'\}};var data = [usercpu,syscpu,idlecpu];""".format(date,userl,systeml,idlel))
 
 
-if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='CPU benchmark Tester')
-    parser.set_defaults(method=main)
-    parser.add_argument('-t','-time',type=int)
-    parser.add_argument('-i','-interval',type=int)
-    args=parser.parse_args()
-    args.method(**vars(args))
