@@ -10,10 +10,20 @@ No additional Installation Required
 ## Usage
 ### Download the Git Repository
 ```bash
-git clone https://github.com/sribs/CPUBenchmarking.git
+git clone https://github.com/sribs/LinuxBenchmarking
 ```
 ### Run the script
 ```bash
 python main.py -t <in Seconds> -i <in Seconds>
 ```
+
+## Output
+### CPU Usage
+![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/cpu.png)
+
+### Memory Usage
+![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/memory.png)
+
+### Swap Usage
+![alt text](https://raw.githubusercontent.com/sribs/LinuxBenchmarking/master/swap.png)
 
