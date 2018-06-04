@@ -1,5 +1,5 @@
-# CPUBenchmarking
-CPU benchmarking with Graphical Analysis using Python, Javascript and Plotly
+# Linux Benchmarking
+Linux benchmarking with Graphical Analysis using Python, Javascript and Plotly
 
 ## Introduction
 Simple benchmarking tool to get the Live CPU Usage( User, System, Idle, IOWait, Nice Interrupts), Live Memory Usage and Live Swap Usage
