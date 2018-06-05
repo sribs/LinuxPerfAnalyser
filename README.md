@@ -1,4 +1,4 @@
-# Linux Benchmarking
+# Linux PerfAnalyzer
 Linux Performance Graphical Analysis using Python, Javascript and Plotly
 
 ## Introduction
