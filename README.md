@@ -10,7 +10,7 @@ No additional Installation Required
 ## Usage
 ### Download the Git Repository
 ```bash
-git clone https://github.com/sribs/LinuxBenchmarking
+git clone https://github.com/sribs/LinuxPerfAnalyser
 ```
 ### Run the script
 ```bash
