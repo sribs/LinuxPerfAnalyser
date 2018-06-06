@@ -10,7 +10,7 @@
     <div id="cpuDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
     <div id="memoryDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
     <div id="swapDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
-     <div id="cpuDiv"></div>
+     <div id="pcpuDiv"></div>
     <div id="memDiv"></div>
     <script src="cpu.js"></script>
     <script src="memory.js"></script>
@@ -25,7 +25,7 @@
         Plotly.newPlot('memoryDiv',memData,memlayout);
         Plotly.newPlot('swapDiv',swapData,swaplayout);
         Plotly.newPlot('memDiv',procMemory,layoutMemory);
-        Plotly.newPlot('cpuDiv',procCPU,layoutCPU)
+        Plotly.newPlot('pcpuDiv',procCPU,layoutCPU)
     </script>
   </body>
   

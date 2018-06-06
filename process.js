@@ -1,12 +1,12 @@
 
-    var memory=[{
-    values: [3.8, 3.0, 2.2, 1.9],
-    labels: ['elite /usr/lib/firefox/firefox', 'elite /usr/lib/firefox/firefox', 'elite /usr/lib/firefox/firefox', 'elite /usr/share/code/code'],
+    var procMemory=[{
+    values: [3.3, 3.1, 2.0, 2.0],
+    labels: ['elite /usr/lib/firefox/firefox', 'elite /usr/lib/firefox/firefox', 'elite /usr/share/code/code', 'elite /usr/lib/firefox/firefox'],
     type: 'pie'
     }];
     
-    var cpu=[{
-    values: [16.5, 6.2, 5.0, 3.1],
+    var procCPU=[{
+    values: [12.9, 6.4, 4.9, 3.0],
     labels: ['elite /usr/lib/firefox/firefox', 'elite /usr/lib/firefox/firefox', 'elite /usr/share/code/code', 'elite /usr/lib/firefox/firefox'],
     type: 'pie'
     }];
