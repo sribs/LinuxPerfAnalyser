@@ -61,6 +61,4 @@ def Top10ProcessesMemory():
         height:400,
         title:'Top 5 Process Consumers (CPU)'
     }};""".format(values,label,valuesCpu,labelCpu))
-    jsfile.close
-
-Top10ProcessesMemory()
+    jsfile.close()
