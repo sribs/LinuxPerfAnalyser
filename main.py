@@ -1,6 +1,7 @@
 from cpu import cpuUsage
 from memSwap import memory
 import argparse
+from process import Top10ProcessesMemory
 
 def main(t=10,i=1,**kwargs):
     import threading
@@ -10,6 +11,7 @@ def main(t=10,i=1,**kwargs):
     memSwapthread.start()
     cputhread.join()
     memSwapthread.join()
+    Top10ProcessesMemory()
 
 
 if __name__ == '__main__':
